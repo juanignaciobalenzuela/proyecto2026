@@ -1,12 +1,14 @@
 .background-cuadrado{
+    background-image: url(images/imagenfondo.png);
+
 position: fixed;
 top: 50%;
 left: 50%;
 transform: translate(-50%,  -50%);
-width: 1360px;
-height: 630px;
-background-color: gray;
+width: 100vh;
+height: 100vh;
 z-index: -1;
+background-size: cover;
 }
 
 .cuadrado{
