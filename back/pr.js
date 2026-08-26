@@ -1,6 +1,6 @@
 let suelo = {
 
-    humedad: 0,
+    humedad: 5,
     temperatura: 0,
  
 

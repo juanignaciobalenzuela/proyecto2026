@@ -16,6 +16,8 @@ transform: translate(-50%,  -50%);
 width: 580px;
 height: 376px;
 background-color: white;
+opacity: 0.95;
+
 }
 
 
@@ -26,8 +28,10 @@ left: 50%;
 transform: translate(-50%,  -50%);
 width: 206px;
 height: 375px;
-background-color: lightgray;
+background-color: black;
 margin-left: -188px;
+opacity: 0.1;
+filter: blur(1px);
 }
 
 .cuadrado3{
