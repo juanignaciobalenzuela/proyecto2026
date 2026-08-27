@@ -50,7 +50,7 @@ Fase 2 en curso.
 
 ### Hoy
 
-```
+```text
 proyecto2026/
 ├── README.md
 ├── front/
@@ -72,7 +72,7 @@ proyecto2026/
 
 El backend no debería ser un solo archivo. La estructura propuesta separa las cuatro responsabilidades descritas en [Arquitectura del backend](#arquitectura-del-backend):
 
-```
+```text
 proyecto2026/
 ├── front/                  # sin cambios
 ├── firmware/
@@ -203,7 +203,7 @@ Ejemplo del objeto ya armado del lado de Node (el `timestamp` no viene por el ca
 
 Cuatro capas, cada una en su archivo. La regla es que ninguna sepa de la de al lado más de lo necesario:
 
-```
+```text
 Arduino ──serial──► [1 lector] ──► [2 parser] ──► [3 storage] ──► [4 API HTTP] ──► Frontend
 ```
 
@@ -275,7 +275,7 @@ Pensado para **no depender del hardware para avanzar**: el backend puede estar t
 
 ## Flujo de la información
 
-```
+```text
 Sensores → Arduino → (serial, JSON) → Backend → Frontend → Usuario
 ```
 
