@@ -1,0 +1,27 @@
+{
+  "name": "proyecto2026",
+  "version": "0.1.0",
+  "description": "Dispositivo de **medición** de parámetros del suelo y del ambiente que muestra los datos en una página web.",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "node back/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitkinjoaco/proyecto2026.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/nitkinjoaco/proyecto2026/issues"
+  },
+  "private": true,
+  "homepage": "https://github.com/nitkinjoaco/proyecto2026#readme",
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "typescript": "^7.0.2"
+  }
+}
