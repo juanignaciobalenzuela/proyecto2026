@@ -4,7 +4,9 @@ Dispositivo de **medición** de parámetros del suelo y del ambiente que muestra
 
 Terrasense lee humedad y temperatura del suelo, humedad y temperatura del aire, nivel de luz ambiental y pH del suelo mediante sensores conectados a un Arduino Uno. Los datos viajan por comunicación serial (cable) hacia un backend en Node + TypeScript, que los persiste y los expone al frontend.
 
-> **Importante:** Terrasense **no** actúa sobre el cultivo. No riega, no ventila y no calefacciona. La única acción física que ejecuta es informar (más un LED de estado en D13 que parpadea en cada envío exitoso de datos).
+Es un **proyecto de secundario**: el objetivo es que funcione de punta a punta y se entienda, no montar una arquitectura de producción. Por eso se usa Node + TypeScript sin frameworks ni base de datos, y se corre todo en una sola computadora.
+
+> **Importante:** Terrasense **no** actúa sobre el cultivo. No riega, no ventila y no calefacciona. Lo único que hace es medir e informar.
 
 ---
 
@@ -27,7 +29,7 @@ Fase 2 en curso.
 | Frontend — Maquetado estructural (HTML + CSS gris) | Completado |
 | Frontend — CSS de alta fidelidad | Pendiente |
 | Backend — Contrato del mensaje serial | **Pendiente — bloquea todo lo demás** |
-| Backend — `package.json` | Completado |
+| Backend — `package.json` y `tsconfig.json` | Completado |
 | Backend — Tipos y modelo de datos | En curso (`back/tipos.ts` son variables sueltas, faltan las `interface`) |
 | Backend — Lectura/escritura de archivos (fs) | Pendiente |
 | Backend — API HTTP para el frontend | Pendiente |
@@ -39,7 +41,7 @@ Fase 2 en curso.
 ## Stack
 
 - **Hardware:** Arduino Uno (C/C++ vía Arduino IDE), simulaciones en Tinkercad
-- **Backend:** Node.js + TypeScript (`fs` para persistencia, `serialport` para leer el Arduino)
+- **Backend:** Node.js 24 + TypeScript 7 (`fs` para persistencia, `serialport` para leer el Arduino)
 - **Frontend:** HTML + CSS (sin framework por ahora)
 - **Formato de intercambio:** JSON
 - **Diseño:** Figma (wireframes y UI Kit), Whimsical (mapa de navegación)
@@ -53,6 +55,8 @@ Fase 2 en curso.
 ```text
 proyecto2026/
 ├── README.md
+├── package.json
+├── tsconfig.json           # configuración de TypeScript (solo chequeo, no compila)
 ├── front/
 │   ├── index.html          # Maquetado principal (usa style.css)
 │   ├── style.css
@@ -64,8 +68,11 @@ proyecto2026/
 │   ├── pagina.css
 │   └── images/
 │       └── imagenfondo.png
-└── back/
-    └── tipos.ts            # Variables de prueba de sensores
+├── back/
+│   ├── index.ts            # Prueba de arranque
+│   └── tipos.ts            # Variables de prueba de sensores
+└── firmware/
+    └── terrasense.ino      # Sketch del Arduino
 ```
 
 ### A dónde va
@@ -109,7 +116,7 @@ proyecto2026/
 
 ### Salidas
 
-Ninguna, salvo el LED de estado integrado en D13.
+Ninguna. El dispositivo solo mide y envía; no actúa sobre el entorno.
 
 ### Consumo y ocupación de pines
 
@@ -241,7 +248,7 @@ Para actualizar la pantalla, un `fetch` cada N segundos (*polling*) alcanza. Web
 
 Pensado para **no depender del hardware para avanzar**: el backend puede estar terminado antes de que el protoboard exista.
 
-1. Crear `package.json` y `tsconfig.json`.
+1. Crear `package.json`.
 2. Definir las `interface` en `back/tipos.ts` y **cerrar el contrato del mensaje serial**, documentándolo arriba.
 3. Escribir el **mock**: un módulo que emite líneas falsas con el formato acordado cada 5 segundos.
 4. Parser + storage, probados contra el mock.
@@ -293,7 +300,34 @@ Cuando exista la API, el front pasa a servirse desde el backend (ver [API](#api)
 
 ### Backend
 
-Corre con `npm run dev`, que ejecuta `back/index.ts` con Node (no hace falta compilar). Por ahora solo imprime un valor de prueba.
+Requiere **Node.js 24 o superior**. La primera vez, `npm install` (instala TypeScript y los tipos de Node, que son las dos únicas dependencias por ahora).
+
+| Comando | Qué hace |
+| :--- | :--- |
+| `npm run dev` | Ejecuta `back/index.ts` con Node. Por ahora solo imprime un valor de prueba. |
+| `npm run check` | Chequea los tipos de todo `back/` con `tsc`. No genera archivos. |
+
+#### Por qué no hace falta compilar
+
+Node 24 ejecuta archivos `.ts` directamente: al leerlos **borra las anotaciones de tipo** y corre el JavaScript que queda. No los compila ni los verifica — un error de tipos no lo detiene.
+
+Esa es la división de trabajo del proyecto: **Node ejecuta, TypeScript revisa**. Por eso hay dos comandos y no uno, y por eso `tsconfig.json` tiene `noEmit: true` — no existe un paso de build ni una carpeta `dist/`.
+
+#### `tsconfig.json`
+
+Configura el chequeo de tipos del backend (`include: ["back/**/*.ts"]`; el front es HTML/CSS y el firmware es C++, así que quedan afuera). Las opciones que importan:
+
+| Opción | Por qué está |
+| :--- | :--- |
+| `noEmit` | No se compila nada: Node ya ejecuta los `.ts`. `tsc` solo revisa. |
+| `erasableSyntaxOnly` | Prohíbe la sintaxis que Node **no** puede borrar (`enum`, `namespace`, parámetros con `private`). Sin esto, el código pasa el chequeo pero explota al ejecutarlo. |
+| `verbatimModuleSyntax` | Obliga a escribir `import type` cuando se importa un tipo, para que Node sepa qué línea borrar. |
+| `module` / `moduleResolution: nodenext` | El proyecto es ESM (`"type": "module"` en `package.json`); esto hace que TypeScript resuelva los imports igual que Node. |
+| `allowImportingTsExtensions` | Permite `import { Medicion } from "./tipos.ts"` — en ESM la extensión va sí o sí, y como no se compila, es la del archivo real. |
+| `strict` | El punto de usar TypeScript. Incluye `strictNullChecks`, que es lo que va a atajar los `NaN` del DHT11 descritos arriba. |
+| `noUncheckedIndexedAccess` | Al partir la línea CSV del serial, `partes[5]` pasa a ser `string | undefined`. Obliga a contemplar la línea corta o corrupta antes de usarla. |
+
+Las tres últimas son las que le dan sentido a definir las `interface` de `back/tipos.ts`: sin `strict`, el compilador acepta cualquier cosa y el contrato no sirve de nada.
 
 ### Hardware
 
@@ -309,7 +343,7 @@ Corre con `npm run dev`, que ejecuta `back/index.ts` con Node (no hace falta com
 
 - Hay tres pares HTML/CSS distintos (`style.css`, `archivo.css`, `diseño.css`) que son versiones del mismo wireframe. Unificarlos antes de aplicar el CSS definitivo de Fase 2.
 - `front/index.html` incluye `<script src="back\pr.js">`, que apunta a una ruta que ya no existe y usa barra invertida (los navegadores esperan `/`). Sacarlo o corregirlo.
-- `back/tipos.ts` declara variables con valores en vez de tipos. Lo que hace falta son `interface`, que en TypeScript existen solo en tiempo de compilación y obligan a que las cuatro capas del backend hablen el mismo idioma.
+- `back/tipos.ts` declara variables con valores en vez de tipos. Lo que hace falta son `interface`, que en TypeScript existen solo en tiempo de compilación y obligan a que las cuatro capas del backend hablen el mismo idioma. El chequeo ya está configurado (`npm run check`), falta el contenido.
 - El pinout no está documentado (ver [Pinout](#pinout)).
 
 ---
@@ -356,6 +390,7 @@ Corre con `npm run dev`, que ejecuta `back/index.ts` con Node (no hace falta com
 ### Backend
 
 - [x] Crear `package.json`
+- [x] Configurar TypeScript (`tsconfig.json` + `npm run check`)
 - [ ] Definir las `interface` en `back/tipos.ts`
 - [ ] Escribir el mock de datos para desarrollar sin hardware
 - [ ] Parser, storage (JSON Lines) y API HTTP

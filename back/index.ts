@@ -1,2 +1,4 @@
-const temperature: number = 25;
-console.log(`The current temperature is ${temperature}°C.`);
+import { medidcion } from "./tipos.ts";
+
+
+console.log(medidcion);

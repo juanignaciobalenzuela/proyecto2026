@@ -1,16 +1,16 @@
-let suelo = {
-
-    humedad: 5,
-    temperatura: 0,
+interface medidcion {
+    aire:{humedad: number, temperatura: number},
+    suelo:{humedad: number, temperatura: number},
+    luz: number,
+    ph: number
 }
 
-let aire = {
-humedad: 0,
-temperatura: 0,
 
+const medidcion: medidcion = {
+    aire: {humedad: 0, temperatura: 0},
+    suelo: {humedad: 0, temperatura: 0},
+    luz: 0,
+    ph: 0
 }
 
-let ph =  0
-
-let luz = 0
-
+export { medidcion };
