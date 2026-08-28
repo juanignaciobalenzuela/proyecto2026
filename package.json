@@ -5,6 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "dev": "node back/index.ts",
+    "check": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
