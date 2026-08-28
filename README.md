@@ -27,8 +27,8 @@ Fase 2 en curso.
 | Frontend — Maquetado estructural (HTML + CSS gris) | Completado |
 | Frontend — CSS de alta fidelidad | Pendiente |
 | Backend — Contrato del mensaje serial | **Pendiente — bloquea todo lo demás** |
-| Backend — `package.json` y `tsconfig.json` | Pendiente |
-| Backend — Tipos y modelo de datos | En curso (`src/pr.ts` son variables sueltas, faltan las `interface`) |
+| Backend — `package.json` | Completado |
+| Backend — Tipos y modelo de datos | En curso (`back/tipos.ts` son variables sueltas, faltan las `interface`) |
 | Backend — Lectura/escritura de archivos (fs) | Pendiente |
 | Backend — API HTTP para el frontend | Pendiente |
 | Backend — Comunicación serial (`serialport`) | Pendiente |
@@ -64,8 +64,8 @@ proyecto2026/
 │   ├── pagina.css
 │   └── images/
 │       └── imagenfondo.png
-└── src/
-    └── pr.ts               # Variables de prueba de sensores
+└── back/
+    └── tipos.ts            # Variables de prueba de sensores
 ```
 
 ### A dónde va
@@ -77,9 +77,9 @@ proyecto2026/
 ├── front/                  # sin cambios
 ├── firmware/
 │   └── terrasense.ino      # el sketch del Arduino, versionado acá
-├── src/
+├── back/
 │   ├── index.ts            # arranque: conecta las piezas y levanta el server
-│   ├── tipos.ts            # interfaces Medicion, Usuario (reemplaza a pr.ts)
+│   ├── tipos.ts            # interfaces Medicion, Usuario
 │   ├── serial/
 │   │   ├── lector.ts       # abre el puerto COM, emite líneas
 │   │   └── mock.ts         # emite líneas falsas, para trabajar sin hardware
@@ -242,7 +242,7 @@ Para actualizar la pantalla, un `fetch` cada N segundos (*polling*) alcanza. Web
 Pensado para **no depender del hardware para avanzar**: el backend puede estar terminado antes de que el protoboard exista.
 
 1. Crear `package.json` y `tsconfig.json`.
-2. Definir las `interface` en `src/tipos.ts` y **cerrar el contrato del mensaje serial**, documentándolo arriba.
+2. Definir las `interface` en `back/tipos.ts` y **cerrar el contrato del mensaje serial**, documentándolo arriba.
 3. Escribir el **mock**: un módulo que emite líneas falsas con el formato acordado cada 5 segundos.
 4. Parser + storage, probados contra el mock.
 5. API HTTP + servir el front. En este punto la página ya muestra datos (falsos) de punta a punta.
@@ -293,7 +293,7 @@ Cuando exista la API, el front pasa a servirse desde el backend (ver [API](#api)
 
 ### Backend
 
-Todavía no corre: faltan el `package.json` y el `tsconfig.json`, y `src/pr.ts` solo declara variables de prueba.
+Corre con `npm run dev`, que ejecuta `back/index.ts` con Node (no hace falta compilar). Por ahora solo imprime un valor de prueba.
 
 ### Hardware
 
@@ -309,7 +309,7 @@ Todavía no corre: faltan el `package.json` y el `tsconfig.json`, y `src/pr.ts` 
 
 - Hay tres pares HTML/CSS distintos (`style.css`, `archivo.css`, `diseño.css`) que son versiones del mismo wireframe. Unificarlos antes de aplicar el CSS definitivo de Fase 2.
 - `front/index.html` incluye `<script src="back\pr.js">`, que apunta a una ruta que ya no existe y usa barra invertida (los navegadores esperan `/`). Sacarlo o corregirlo.
-- `src/pr.ts` declara variables con valores en vez de tipos. Lo que hace falta son `interface`, que en TypeScript existen solo en tiempo de compilación y obligan a que las cuatro capas del backend hablen el mismo idioma.
+- `back/tipos.ts` declara variables con valores en vez de tipos. Lo que hace falta son `interface`, que en TypeScript existen solo en tiempo de compilación y obligan a que las cuatro capas del backend hablen el mismo idioma.
 - El pinout no está documentado (ver [Pinout](#pinout)).
 
 ---
@@ -355,8 +355,8 @@ Todavía no corre: faltan el `package.json` y el `tsconfig.json`, y `src/pr.ts` 
 
 ### Backend
 
-- [ ] Crear `package.json` y `tsconfig.json`
-- [ ] Reemplazar `src/pr.ts` por `src/tipos.ts` con las `interface`
+- [x] Crear `package.json`
+- [ ] Definir las `interface` en `back/tipos.ts`
 - [ ] Escribir el mock de datos para desarrollar sin hardware
 - [ ] Parser, storage (JSON Lines) y API HTTP
 - [ ] Implementar la comunicación serial con `serialport`
