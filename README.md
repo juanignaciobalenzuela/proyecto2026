@@ -67,7 +67,11 @@ proyecto2026/
 │   ├── pagina.html         # Pantalla en construcción (usa pagina.css, todavía vacío)
 │   ├── pagina.css
 │   └── images/
-│       └── imagenfondo.png
+│       ├── imagenfondo.png                 # fondo del wireframe (11 MB, sin optimizar)
+│       ├── Anotación 2026-08-18 153734.png # captura de trabajo (387 KB)
+│       ├── 157038f1...594d8f4.png          # export de Figma (8 MB, sin optimizar)
+│       ├── 67cd5ae0...5bb618c0.png         # export de Figma
+│       └── a4a9a27a...9dc38c1e.png         # export de Figma
 ├── back/
 │   ├── index.ts            # Prueba de arranque
 │   └── tipos.ts            # Variables de prueba de sensores
@@ -98,6 +102,58 @@ proyecto2026/
 ├── package.json
 └── tsconfig.json
 ```
+
+### Frontend (`front/`)
+
+Cuatro páginas HTML, cada una con su propia hoja de estilos. No hay build, ni JS propio, ni assets compartidos: cada par HTML/CSS es independiente.
+
+```text
+front/
+├── index.html ────────► style.css      # Maquetado principal. Único con contenido
+│                                       # (<p> de humedad) y con un <script> roto
+│                                       # apuntando a back\pr.js (ver Deuda técnica)
+│
+├── wireframe.html ────► archivo.css    # Wireframe estructural: 8 <section> grises
+│   └── usa images/imagenfondo.png      # + una imagen de fondo
+│
+├── wireframe1.html ───► diseño.css     # Variante del mismo wireframe: 4 <section>
+│
+├── pagina.html ───────► pagina.css     # Pantalla en construcción: <body> y CSS
+│                                       # los dos vacíos (0 bytes)
+│
+└── images/                             # Exports de Figma y capturas de trabajo
+```
+
+Los tres pares de arriba son versiones del mismo diseño, no pantallas distintas. La [Deuda técnica](#deuda-técnica-conocida) incluye unificarlos en un solo par antes de aplicar el CSS de alta fidelidad de Fase 2.
+
+### Hardware (`firmware/`)
+
+Todo el código del Arduino vive en un solo sketch. El Arduino IDE exige que el `.ino` se llame igual que la carpeta que lo contiene, así que el nombre del archivo no es opcional.
+
+```text
+firmware/
+└── terrasense.ino    # Sketch del Arduino Uno — HOY ESTÁ VACÍO (0 bytes)
+                      # El código real todavía vive en las simulaciones de Tinkercad
+```
+
+Lo que ese archivo tiene que terminar conteniendo, y cómo se conecta con el resto:
+
+```text
+                          firmware/terrasense.ino
+                          ┌──────────────────────────────┐
+  A_  Humedad de suelo ──►│                              │
+  A_  LDR (luz)        ──►│  setup()                     │
+  A_  pH (PH-4502C)    ──►│    Serial.begin(9600)        │
+  D_  DS18B20 (OneWire)──►│    dht.begin() / sensors...  │
+  D_  DHT11            ──►│                              │
+                          │  loop()                      │
+                          │    leer los 6 valores        │
+                          │    Serial.println(linea) ────┼──► USB / serial ──► back/
+                          │    delay(5000)               │
+                          └──────────────────────────────┘
+```
+
+El formato exacto de `linea` es el [contrato del mensaje](#contrato-del-mensaje--a-cerrar-antes-de-codear), que sigue sin cerrarse y bloquea tanto al firmware como al backend. Los pines concretos (`A_`, `D_`) están [pendientes de documentar](#pinout).
 
 ---
 
