@@ -1,4 +1,9 @@
-import { medidcion } from "./tipos.ts";
+import type { medidcion } from "./tipos.ts";
+import { crearMock } from "./serial/mock.ts";
 
+const emisor = crearMock();
 
-console.log(medidcion);
+emisor.on("data", (linea: string) =>{
+    console.log(linea);
+});
+
