@@ -4,7 +4,7 @@
   "description": "Dispositivo de **medición** de parámetros del suelo y del ambiente que muestra los datos en una página web.",
   "main": "index.ts",
   "scripts": {
-    "dev": "node back/index.ts",
+    "dev": "node --experimental-strip-types back/index.ts",
     "check": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +23,6 @@
   "homepage": "https://github.com/nitkinjoaco/proyecto2026#readme",
   "devDependencies": {
     "@types/node": "^26.4.0",
-    "typescript": "^7.0.2"
+    "typescript": "^6.0.3"
   }
 }
