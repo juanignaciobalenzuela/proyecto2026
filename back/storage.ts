@@ -17,7 +17,7 @@ export async function  guardar(m:medicion) {
     }
 }
 
-export function obtenerultima(): medicion | null {
+export function obtenerUltima(): medicion | null {
     return ultima;
 }
 
