@@ -86,10 +86,16 @@ transform: translate(-50%,  -50%);
 width: 124px;
 height: 23px;
 background-color: black;
-margin-left: 5px;
-margin-top: -147px ;
+margin-left: 95px;
+margin-top: -160px ;
+background: none;       
+  border: none;          
+  box-shadow: none;  
 }
+p{
+font-family: Arial, Helvetica, sans-serif;
 
+}
 .cuadrado6{
 position: fixed;
 top: 50%;
@@ -100,6 +106,22 @@ height: 23px;
 background-color: black;
 margin-left: 82px;
 margin-top: -50px ;
+
+}
+
+.correo{
+  
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: lightgray;
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin-top: -33px;
+  font-size: 16px;
+  margin-left: -8px;
 }
 
 .cuadrado7{
