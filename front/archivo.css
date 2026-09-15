@@ -212,7 +212,7 @@ box-shadow: none;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-  background-color: lightgreen;
+ color: green;
   background: none;
   border: none;
   box-shadow: none;
@@ -220,5 +220,92 @@ box-shadow: none;
 margin-left: -18px;
 font-size: 11px;
 white-space: nowrap;
+
+}
+
+.cuadrado10{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,  -50%);
+  width: 59px;
+  height: 23px;
+  background-color: black;
+  margin-left: -10px;
+  margin-top: 85px ;
+background: none;
+border: none;
+box-shadow: none;
+
+
+}
+.notiene{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: black;
+  margin-top: 12px;
+margin-left: -18px;
+font-size: 11px;
+white-space: nowrap;
+background: none;
+border: none;
+box-shadow: none;
+}
+
+.cuadrado11{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,  -50%);
+  width: 59px;
+  height: 23px;
+  background-color: black;
+  margin-left: -10px;
+  margin-top: 85px ;
+background: none;
+border: none;
+box-shadow: none;
+
+
+
+}
+
+.registrate{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+ color: green;
+  margin-top: 12px;
+margin-left: 103px;
+font-size: 11px;
+white-space: nowrap;
+background: none;
+border: none;
+box-shadow: none;
+
+
+}
+
+button{
+color: white;
+background-color: green;
+border: none;
+box-shadow: none;
+border-radius: 3px;
+white-space: nowrap;
+margin-left: -140px;
+box-shadow: 0 0 0 10px green;
+}
+
+button:hover{
+  filter: brightness(0.8);
+}
+
+.cuadrado8{
+background: none;
+
 
 }
