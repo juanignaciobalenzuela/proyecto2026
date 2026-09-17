@@ -134,8 +134,9 @@
       border: none;
       box-shadow: none;
       margin-top: -33px;
-      font-size: 16px;
+      font-size: 13px;
       margin-left: -2px;
+      color: gray;
     }
     
     .cuadrado7{
@@ -163,7 +164,8 @@
       box-shadow: none;
       margin-top: -20px;
     margin-left: -2px;
-    font-size: 16px;
+    font-size: 13px;
+    color: gray;
     }
     
     .paracontraseña{
@@ -250,15 +252,32 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,  -50%);
-        width: 59px;
+        width: 75px;
         height: 23px;
         background-color: black;
-        margin-left: 100px;
-        margin-top: -70px ;
-
+        margin-left: 155px;
+        margin-top: -99px ;
+        background: none;
+        border: none;
+        box-shadow: none;
 
     }
     
+.nombre{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: lightgray;
+  background: none;
+  border: none;
+  box-shadow: none;
+font-size: 13px;
+color: gray;
+
+
+}
+
     .paranombre{
         background-color: transparent; 
         border: none;                  
@@ -266,9 +285,55 @@
         padding: 5px 0;                
         font-size: 16px;        
         outline: none;
-      width: 160px;
-      
+      width: 175px;
+      margin-top: 3px;
 
 
     }
     
+
+    .cuadrado10{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,  -50%);
+      width: 75px;
+      height: 23px;
+      background-color: black;
+    margin-left: 155px;
+    background: none;
+    border: none;
+    box-shadow: none;
+margin-top: -8px;
+
+
+    }
+
+    .contra{
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+      background-color: lightgray;
+      background: none;
+      border: none;
+      box-shadow: none;
+    font-size: 13px;
+    color: gray;
+white-space: nowrap;
+
+
+    }
+
+    .paracontra{
+      background-color: transparent; 
+      border: none;                  
+      border-bottom: 2px solid lightgray; 
+      padding: 5px 0;                
+      font-size: 16px;        
+      outline: none;
+    width: 175px;
+
+
+
+    }
