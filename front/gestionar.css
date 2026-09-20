@@ -381,3 +381,40 @@ text-decoration-color: #55a936;
 text-underline-offset: 5px;
 text-decoration-thickness: 3px;
 }
+
+.cuadrado11{
+position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 100px;
+    height: 60px;
+    background-color: black;
+    margin-left: 1550px;
+    margin-top: -503px;
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+.boton4{
+color: black;
+background: none;
+border: none;
+box-shadow: none;
+white-space: nowrap;
+width: 120px;
+height: 30px;
+font-size: 17px;
+font-family: "Inter", sans-serif;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal;
+}
+
+.boton4:hover{
+text-decoration: underline;
+text-decoration-color: #55a936;
+text-underline-offset: 5px;
+text-decoration-thickness: 3px;
+}
