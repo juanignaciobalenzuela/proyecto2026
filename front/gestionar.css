@@ -1,0 +1,383 @@
+.background-cuadrado{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 100vw;
+    height: 100vw;
+    background-color: gray;
+    min-height: 100vh;
+    }
+    
+.sombra{
+ position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 100vw;
+    height: 100vw;
+    background-color: black;
+    min-height: 100vh;
+    opacity: 0.3;
+
+
+}
+
+    .cuadrado1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 100vw;
+    height: 80px;
+    background-color: lightgray;
+    opacity: 1;
+    border: 1px solid lightgray;
+    margin-top: -432px;
+    }
+    
+    
+   .imagenfondo3{
+height: 100vw;
+width: 100vw;
+
+
+   }
+    .cuadrado2{
+position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 1200px;
+    height: 200px;
+    background-color: lightgray;
+    opacity: 0.9;
+    border: 1px solid lightgray;
+background: none;
+      border: none;
+      box-shadow: none;
+
+    }
+    
+    
+ 
+    
+    
+    
+    
+
+   
+
+    .cuadrado3{
+position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    opacity: 1;
+background: none;
+box-shadow: none;
+border: none;
+margin-top: -400px;
+margin-left: -930px;
+    }
+
+    .imagenlogo{
+margin-top: -200px;
+
+width: 50px;
+height: 50px;
+    }
+   
+    
+.terrasense{
+font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        background-color: lightgray;
+      font-size: 15px;
+      color: black;
+     background: none;
+      border: none;
+      box-shadow: none;
+      white-space: nowrap;
+      margin-left: 45px;
+      margin-top: -38px;
+      font-weight: 300;
+
+
+}
+    
+    .cuadrado4{
+position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 500px;
+    height: 50px;
+    background-color: black;
+    opacity: 1;
+background: none;
+box-shadow: none;
+border: none;
+margin-left: -530px;
+margin-top: -200px;
+
+
+
+    }
+   
+    .gestion{
+font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        background-color: white;
+      font-size: 55px;
+      color: white;
+     background: none;
+      border: none;
+      box-shadow: none;
+      font-weight: bold;
+      margin-top: 20px;
+
+
+    }
+    
+
+  .cuadrado5{
+position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 440px;
+    height: 50px;
+    background-color: black;
+    opacity: 1;
+background: none;
+box-shadow: none;
+border: none;
+margin-left: -560px;
+margin-top: -20px;
+
+
+  }
+   
+     .consulta{
+font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        background-color: white;
+      font-size: 17px;
+      color: white;
+     background: none;
+      border: none;
+      box-shadow: none;
+    
+      
+
+
+     }
+    
+   .cuadrado6{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 100px;
+    height: 60px;
+    background-color: black;
+    margin-left: 235px;
+    margin-top: 135px ;
+    background: none;
+    box-shadow: none;
+    border: none;
+    margin-top: 100px;
+    margin-left: 225px;
+    }
+
+     button{
+    color: white;
+    background-color: #55a936;
+    border: none;
+    box-shadow: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    margin-left: -295px;
+    margin-top: -10px;
+    box-shadow: 0 0 0 10px #55a936;
+    width: 120px;
+    height: 30px;
+    font-size: 17px;
+    margin-left: -950px;
+   
+    }
+    button:hover{
+      filter: brightness(0.8);
+    }
+
+
+    .cuadrado7{
+position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 100px;
+    height: 60px;
+    background-color: black;
+    margin-left: 150px;
+    margin-top: -413px ;
+    background: none;
+    box-shadow: none;
+    border: none;
+   
+
+
+    }
+
+    .boton{
+color: black;
+   background: none;
+    border: none;
+    box-shadow: none;
+    white-space: nowrap;
+    width: 120px;
+    height: 30px;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+font-weight: bold;
+
+    }
+
+    .boton:hover{
+text-decoration: underline;
+text-decoration-color: #55a936;
+text-underline-offset: 5px;
+text-decoration-thickness: 3px;
+    }
+
+
+    .cuadrado8{
+position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 100px;
+    height: 60px;
+    background-color: black;
+    margin-left: 240px;
+    margin-top: -413px ;
+    background: none;
+    box-shadow: none;
+    border: none;
+    }
+
+
+    .boton1{
+color: black;
+   background: none;
+    border: none;
+    box-shadow: none;
+    white-space: nowrap;
+    width: 120px;
+    height: 30px;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+font-weight: bold;
+
+
+    }
+
+
+    .boton1:hover{
+text-decoration: underline;
+text-decoration-color: #55a936;
+text-underline-offset: 5px;
+text-decoration-thickness: 3px;
+    }
+
+
+    .cuadrado9{
+position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 100px;
+    height: 60px;
+    background-color: black;
+    margin-left: 350px;
+    margin-top: -413px ;
+    background: none;
+    box-shadow: none;
+    border: none;
+    }
+
+    .boton2{
+color: black;
+   background: none;
+    border: none;
+    box-shadow: none;
+    white-space: nowrap;
+    width: 120px;
+    height: 30px;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+font-weight: bold;
+    }
+
+    .boton2:hover{
+text-decoration: underline;
+text-decoration-color: #55a936;
+text-underline-offset: 5px;
+text-decoration-thickness: 3px;
+    }
+
+.cuadrado10{
+position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 100px;
+    height: 60px;
+    background-color: black;
+    margin-left: 1550px;
+    margin-top: -413px ;
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+.boton3{
+color: black;
+background: none;
+border: none;
+box-shadow: none;
+white-space: nowrap;
+width: 120px;
+height: 30px;
+font-size: 17px;
+font-family: "Inter", sans-serif;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal;
+}
+
+.boton3:hover{
+text-decoration: underline;
+text-decoration-color: #55a936;
+text-underline-offset: 5px;
+text-decoration-thickness: 3px;
+}
