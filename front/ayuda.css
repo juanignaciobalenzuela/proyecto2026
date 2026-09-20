@@ -123,30 +123,62 @@ position: fixed;
 background: none;
 box-shadow: none;
 border: none;
-margin-left: -530px;
-margin-top: -200px;
+margin-left: -490px;
+margin-top: -230px;
 
 
 
     }
    
-    .gestion{
+    .ayuda{
 font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
         font-weight: weight;
         font-style: normal;
         background-color: white;
-      font-size: 55px;
+      font-size: 70px;
       color: white;
      background: none;
       border: none;
       box-shadow: none;
       font-weight: bold;
       margin-top: 20px;
-
+    font-weight: 600;
 
     }
     
+.cuadrado45{
+position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 440px;
+    height: 50px;
+    background-color: black;
+    opacity: 1;
+background: none;
+box-shadow: none;
+border: none;
+margin-left: -520px;
+margin-top: -110px;
+
+}
+
+
+.pregunta{
+    font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        background-color: white;
+      font-size: 19px;
+      color: white;
+     background: none;
+      border: none;
+      box-shadow: none;
+      white-space: nowrap;
+}
+
 
   .cuadrado5{
 position: fixed;
@@ -160,8 +192,8 @@ position: fixed;
 background: none;
 box-shadow: none;
 border: none;
-margin-left: -560px;
-margin-top: -20px;
+margin-left: -520px;
+margin-top: -60px;
 
 
   }
@@ -172,13 +204,13 @@ font-family: "Inter", sans-serif;
         font-weight: weight;
         font-style: normal;
         background-color: white;
-      font-size: 17px;
+      font-size: 19px;
       color: white;
      background: none;
       border: none;
       box-shadow: none;
-    
-      
+    font-weight: bold;
+      white-space: nowrap;
 
 
      }
@@ -188,16 +220,30 @@ font-family: "Inter", sans-serif;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
+    width: 500px;
     height: 60px;
     background-color: black;
-    margin-left: 235px;
-    margin-top: 135px ;
+    margin-left: -495px;
+    margin-top: 0px ;
     background: none;
     box-shadow: none;
     border: none;
-    margin-top: 100px;
-    margin-left: 225px;
+
+    }
+
+    .donde{
+font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        background-color: white;
+      font-size: 19px;
+      color: white;
+     background: none;
+      border: none;
+      box-shadow: none;
+white-space: nowrap;
+font-weight: bold;
     }
 
      button{
@@ -229,7 +275,7 @@ position: fixed;
     width: 100px;
     height: 60px;
     background-color: black;
-    margin-left: 190px;
+    margin-left: 160px;
     margin-top: -413px ;
     background: none;
     box-shadow: none;
@@ -253,11 +299,15 @@ color: black;
         font-weight:a weight;
         font-style: normal;
 font-weight: bold;
-border-bottom: 3px solid  green;
-width: fit-content;
+
     }
 
-  
+  .boton:hover{
+text-decoration: underline;
+text-decoration-color: #55a936;
+text-underline-offset: 5px;
+text-decoration-thickness: 3px;
+    }
     
 
     .cuadrado8{
@@ -268,7 +318,7 @@ position: fixed;
     width: 100px;
     height: 60px;
     background-color: black;
-    margin-left: 240px;
+    margin-left: 280px;
     margin-top: -413px ;
     background: none;
     box-shadow: none;
@@ -290,17 +340,13 @@ color: black;
         font-weight: weight;
         font-style: normal;
 font-weight: bold;
-
+border-bottom: 3px solid  green;
+width: fit-content;
 
     }
 
 
-    .boton1:hover{
-text-decoration: underline;
-text-decoration-color: #55a936;
-text-underline-offset: 5px;
-text-decoration-thickness: 3px;
-    }
+    
 
 
     .cuadrado9{
