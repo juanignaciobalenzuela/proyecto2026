@@ -382,19 +382,22 @@ text-underline-offset: 5px;
 text-decoration-thickness: 3px;
 }
 
+
 .cuadrado11{
-position: fixed;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
     width: 100px;
     height: 60px;
     background-color: black;
-    margin-left: 1550px;
-    margin-top: -503px;
+    margin-left: 1715px;
+    margin-top: -413px ;
     background: none;
     box-shadow: none;
     border: none;
+
+
 }
 
 .boton4{
@@ -417,4 +420,46 @@ text-decoration: underline;
 text-decoration-color: #55a936;
 text-underline-offset: 5px;
 text-decoration-thickness: 3px;
+}
+
+.cuadrado12{
+position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 100px;
+    height: 60px;
+    background-color: black;
+    margin-left: 890px;
+    margin-top: -418px ;
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+.boton5{
+     background: none;
+  border: none;
+  padding: 8px;
+  margin: 0;
+  cursor: default;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.iconousuario {
+  width: 35px; 
+  height: 35px; 
+  color: #374151; 
+  stroke-width: 1.5px;
+}
+
+.boton5:active{
+transform: scale(0.95);
 }
