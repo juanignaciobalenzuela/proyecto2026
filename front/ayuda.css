@@ -1,5 +1,10 @@
 
-  
+
+html {
+    font-size: 62.5%; 
+  }
+
+
 .background-cuadrado{
     position: fixed;
     top: 50%;
@@ -30,18 +35,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100vh;
-    height: 10vh;
+    width: 100vw;
+    height: 10.42vh;
     background-color: lightgray;
     opacity: 1;
     border: 1px solid lightgray;
-    margin-top: -432px;
+    margin-top: -56.25vh;
     }
     
     
    .imagenfondo3{
-min-height: 100vh;
-height: auto;
+height: 100vw;
+width: 100vw;
 
 
    }
@@ -50,15 +55,15 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 75rem;
-    height: 22vh; 
+    width: 120rem;
+    height: 26.04vh;
     background-color: lightgray;
     opacity: 0.9;
     border: 1px solid lightgray;
 background: none;
       border: none;
       box-shadow: none;
-    
+
     }
     
     
@@ -75,23 +80,22 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 3rem;
-    height: 5.5vh;
+    width: 5rem;
+    height: 6.51vh;
     background-color: black;
     opacity: 1;
 background: none;
 box-shadow: none;
 border: none;
-margin-top: -400px;
-margin-left: -930px;
-
+margin-top: -52.08vh;
+margin-left: -93rem;
     }
 
     .imagenlogo{
-margin-top: -200px;
+margin-top: -26.04vh;
 
-width: 3rem;
-height: 5.5vh;
+width: 5rem;
+height: 6.51vh;
     }
    
     
@@ -107,9 +111,10 @@ font-family: "Inter", sans-serif;
       border: none;
       box-shadow: none;
       white-space: nowrap;
-      margin-left: 45px;
-      margin-top: -38px;
+      margin-left: 4.5rem;
+      margin-top: -4.95vh;
       font-weight: 300;
+
 
 }
     
@@ -118,15 +123,15 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 31.25rem;
-    height: 5.5vh;
+    width: 50rem;
+    height: 6.51vh;
     background-color: black;
     opacity: 1;
 background: none;
 box-shadow: none;
 border: none;
-margin-left: -490px;
-margin-top: -230px;
+margin-left: -49rem;
+margin-top: -29.95vh;
 
 
 
@@ -144,9 +149,9 @@ font-family: "Inter", sans-serif;
       border: none;
       box-shadow: none;
       font-weight: bold;
-      margin-top: 20px;
+      margin-top: 2.6vh;
     font-weight: 600;
-    
+
     }
     
 .cuadrado45{
@@ -154,15 +159,15 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 27.5rem;
-    height: 5.5vh;
+    width: 44rem;
+    height: 6.51vh;
     background-color: black;
     opacity: 1;
 background: none;
 box-shadow: none;
 border: none;
-margin-left: -520px;
-margin-top: -110px;
+margin-left: -52rem;
+margin-top: -14.32vh;
 
 }
 
@@ -179,7 +184,6 @@ margin-top: -110px;
       border: none;
       box-shadow: none;
       white-space: nowrap;
-     
 }
 
 
@@ -188,15 +192,15 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 27.5rem;
-    height: 5.5vh;
+    width: 44rem;
+    height: 6.51vh;
     background-color: black;
     opacity: 1;
 background: none;
 box-shadow: none;
 border: none;
-margin-left: -520px;
-margin-top: -60px;
+margin-left: -52rem;
+margin-top: -7.8125vh;
 
 
   }
@@ -215,7 +219,7 @@ font-family: "Inter", sans-serif;
     font-weight: bold;
       white-space: nowrap;
 
- 
+
      }
     
    .cuadrado6{
@@ -223,15 +227,14 @@ font-family: "Inter", sans-serif;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 31.25rem;
-    height: 6.667vh;
+    width: 50rem;
+    height: 7.8125vh;
     background-color: black;
-    margin-left: -495px;
-    margin-top: 0px ;
+    margin-left: -49.5rem;
     background: none;
     box-shadow: none;
     border: none;
-   
+
     }
 
     .donde{
@@ -247,7 +250,6 @@ font-family: "Inter", sans-serif;
       box-shadow: none;
 white-space: nowrap;
 font-weight: bold;
-
     }
 
      button{
@@ -257,14 +259,14 @@ font-weight: bold;
     box-shadow: none;
     border-radius: 3px;
     white-space: nowrap;
-    margin-left: -295px;
-    margin-top: -10px;
+    margin-left: -29.5rem;
+    margin-top: -1.3021;
     box-shadow: 0 0 0 10px #55a936;
-    width: 7.5rem;
-    height: 3.333vh;
+    width: 12rem;
+    height: 3.91vh;
     font-size: 17px;
-    margin-left: -950px;
-
+    margin-left: -95rem;
+   
     }
     button:hover{
       filter: brightness(0.8);
@@ -276,15 +278,15 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 6.25rem;
-    height: 6.667vh;
+    width: 10rem;
+    height: 7.81vh;
     background-color: black;
-    margin-left: 160px;
-    margin-top: -413px ;
+    margin-left: 16rem;
+    margin-top: -53.78vh ;
     background: none;
     box-shadow: none;
     border: none;
- 
+   
 
 
     }
@@ -295,8 +297,8 @@ color: black;
     border: none;
     box-shadow: none;
     white-space: nowrap;
-    width: 7.5rem;
-    height: 3.333vh;
+    width: 12rem;
+    height: 3.90625vh;
     font-size: 17px;
     font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
@@ -319,15 +321,14 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 6.25rem;
-    height: 6.667vh;
+    width: 10rem;
+    height: 7.8125vh;
     background-color: black;
-    margin-left: 280px;
-    margin-top: -413px ;
+    margin-left: 28rem;
+    margin-top: -53.78vh;
     background: none;
     box-shadow: none;
     border: none;
-
     }
 
 
@@ -337,8 +338,8 @@ color: black;
     border: none;
     box-shadow: none;
     white-space: nowrap;
-    width: 7.5rem;
-    height: 3.333vh;
+    width: 12rem;
+    height: 3.90625vh;
     font-size: 17px;
     font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
@@ -359,15 +360,14 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
+    width: 10rem;
     height: 60px;
     background-color: black;
-    margin-left: 350px;
-    margin-top: -413px ;
+    margin-left: 35rem;
+    margin-top: -7.81vh ;
     background: none;
     box-shadow: none;
     border: none;
-    
     }
 
     .boton2{
@@ -376,15 +376,14 @@ color: black;
     border: none;
     box-shadow: none;
     white-space: nowrap;
-    width: 120px;
-    height: 30px;
+    width: 12rem;
+    height: 3.90625vh;
     font-size: 17px;
     font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
         font-weight: weight;
         font-style: normal;
 font-weight: bold;
-
     }
 
     .boton2:hover{
@@ -399,11 +398,11 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
-    height: 60px;
+    width: 10rem;
+    height: 7.8125vh;
     background-color: black;
-    margin-left: 1550px;
-    margin-top: -413px ;
+    margin-left: 155rem;
+    margin-top: -53.78vh ;
     background: none;
     box-shadow: none;
     border: none;
@@ -415,8 +414,8 @@ background: none;
 border: none;
 box-shadow: none;
 white-space: nowrap;
-width: 120px;
-height: 30px;
+width: 12rem;
+height: 3.91vh;
 font-size: 17px;
 font-family: "Inter", sans-serif;
 font-optical-sizing: auto;
@@ -437,11 +436,11 @@ text-decoration-thickness: 3px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
-    height: 60px;
+    width: 10rem;
+    height: 7.8125vh;
     background-color: black;
-    margin-left: 1715px;
-    margin-top: -413px ;
+    margin-left: 171.5rem;
+    margin-top: -53.78vh;
     background: none;
     box-shadow: none;
     border: none;
@@ -455,8 +454,8 @@ background: none;
 border: none;
 box-shadow: none;
 white-space: nowrap;
-width: 120px;
-height: 30px;
+width: 12rem;
+height: 3.91vh;
 font-size: 17px;
 font-family: "Inter", sans-serif;
 font-optical-sizing: auto;
@@ -476,11 +475,11 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
-    height: 60px;
+    width: 10rem;
+    height: 7.8125vh;
     background-color: black;
-    margin-left: 890px;
-    margin-top: -418px ;
+    margin-left: 89rem;
+    margin-top: -54.43vh ;
     background: none;
     box-shadow: none;
     border: none;
@@ -503,8 +502,8 @@ position: fixed;
 }
 
 .iconousuario {
-  width: 35px; 
-  height: 35px; 
+  width: 3.5rem; 
+  height: 4.56vh; 
   color: #374151; 
   stroke-width: 1.5px;
 }
