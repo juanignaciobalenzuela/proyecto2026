@@ -1,3 +1,5 @@
+
+  
 .background-cuadrado{
     position: fixed;
     top: 50%;
@@ -28,8 +30,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100vw;
-    height: 80px;
+    width: 100vh;
+    height: 10vh;
     background-color: lightgray;
     opacity: 1;
     border: 1px solid lightgray;
@@ -38,8 +40,8 @@
     
     
    .imagenfondo3{
-height: 100vw;
-width: 100vw;
+min-height: 100vh;
+height: auto;
 
 
    }
@@ -48,15 +50,15 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 1200px;
-    height: 200px;
+    width: 75rem;
+    height: 22vh; 
     background-color: lightgray;
     opacity: 0.9;
     border: 1px solid lightgray;
 background: none;
       border: none;
       box-shadow: none;
-
+    
     }
     
     
@@ -73,8 +75,8 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 5.5vh;
     background-color: black;
     opacity: 1;
 background: none;
@@ -82,13 +84,14 @@ box-shadow: none;
 border: none;
 margin-top: -400px;
 margin-left: -930px;
+
     }
 
     .imagenlogo{
 margin-top: -200px;
 
-width: 50px;
-height: 50px;
+width: 3rem;
+height: 5.5vh;
     }
    
     
@@ -108,7 +111,6 @@ font-family: "Inter", sans-serif;
       margin-top: -38px;
       font-weight: 300;
 
-
 }
     
     .cuadrado4{
@@ -116,8 +118,8 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 500px;
-    height: 50px;
+    width: 31.25rem;
+    height: 5.5vh;
     background-color: black;
     opacity: 1;
 background: none;
@@ -144,7 +146,7 @@ font-family: "Inter", sans-serif;
       font-weight: bold;
       margin-top: 20px;
     font-weight: 600;
-
+    
     }
     
 .cuadrado45{
@@ -152,8 +154,8 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 440px;
-    height: 50px;
+    width: 27.5rem;
+    height: 5.5vh;
     background-color: black;
     opacity: 1;
 background: none;
@@ -177,6 +179,7 @@ margin-top: -110px;
       border: none;
       box-shadow: none;
       white-space: nowrap;
+     
 }
 
 
@@ -185,8 +188,8 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 440px;
-    height: 50px;
+    width: 27.5rem;
+    height: 5.5vh;
     background-color: black;
     opacity: 1;
 background: none;
@@ -212,7 +215,7 @@ font-family: "Inter", sans-serif;
     font-weight: bold;
       white-space: nowrap;
 
-
+ 
      }
     
    .cuadrado6{
@@ -220,15 +223,15 @@ font-family: "Inter", sans-serif;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 500px;
-    height: 60px;
+    width: 31.25rem;
+    height: 6.667vh;
     background-color: black;
     margin-left: -495px;
     margin-top: 0px ;
     background: none;
     box-shadow: none;
     border: none;
-
+   
     }
 
     .donde{
@@ -244,6 +247,7 @@ font-family: "Inter", sans-serif;
       box-shadow: none;
 white-space: nowrap;
 font-weight: bold;
+
     }
 
      button{
@@ -256,11 +260,11 @@ font-weight: bold;
     margin-left: -295px;
     margin-top: -10px;
     box-shadow: 0 0 0 10px #55a936;
-    width: 120px;
-    height: 30px;
+    width: 7.5rem;
+    height: 3.333vh;
     font-size: 17px;
     margin-left: -950px;
-   
+
     }
     button:hover{
       filter: brightness(0.8);
@@ -272,15 +276,15 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
-    height: 60px;
+    width: 6.25rem;
+    height: 6.667vh;
     background-color: black;
     margin-left: 160px;
     margin-top: -413px ;
     background: none;
     box-shadow: none;
     border: none;
-   
+ 
 
 
     }
@@ -291,8 +295,8 @@ color: black;
     border: none;
     box-shadow: none;
     white-space: nowrap;
-    width: 120px;
-    height: 30px;
+    width: 7.5rem;
+    height: 3.333vh;
     font-size: 17px;
     font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
@@ -315,14 +319,15 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
-    height: 60px;
+    width: 6.25rem;
+    height: 6.667vh;
     background-color: black;
     margin-left: 280px;
     margin-top: -413px ;
     background: none;
     box-shadow: none;
     border: none;
+
     }
 
 
@@ -332,8 +337,8 @@ color: black;
     border: none;
     box-shadow: none;
     white-space: nowrap;
-    width: 120px;
-    height: 30px;
+    width: 7.5rem;
+    height: 3.333vh;
     font-size: 17px;
     font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
@@ -362,6 +367,7 @@ position: fixed;
     background: none;
     box-shadow: none;
     border: none;
+    
     }
 
     .boton2{
@@ -378,6 +384,7 @@ color: black;
         font-weight: weight;
         font-style: normal;
 font-weight: bold;
+
     }
 
     .boton2:hover{
