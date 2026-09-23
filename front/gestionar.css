@@ -121,15 +121,15 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 500px;
-    height: 50px;
+    width: 50rem;
+    height: 5vh;
     background-color: black;
     opacity: 1;
 background: none;
 box-shadow: none;
 border: none;
-margin-left: -530px;
-margin-top: -200px;
+margin-top: -32vh;
+margin-left: -32rem;
 
 
 
@@ -147,7 +147,7 @@ font-family: "Inter", sans-serif;
       border: none;
       box-shadow: none;
       font-weight: bold;
-      margin-top: 20px;
+font-weight: 500;
 
 
     }
@@ -158,15 +158,14 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 440px;
-    height: 50px;
+    width: 44rem;
+    height: 6.51vh;
     background-color: black;
     opacity: 1;
 background: none;
 box-shadow: none;
 border: none;
-margin-left: -560px;
-margin-top: -20px;
+margin-left: -35rem;
 
 
   }
@@ -193,16 +192,14 @@ font-family: "Inter", sans-serif;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
-    height: 60px;
+    width: 10rem;
+    height: 7.81vh;
     background-color: black;
-    margin-left: 235px;
-    margin-top: 135px ;
     background: none;
     box-shadow: none;
     border: none;
-    margin-top: 100px;
-    margin-left: 225px;
+   margin-left: 44rem;
+   margin-top: 20vh;
     }
 
      button{
@@ -350,14 +347,14 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
-    height: 60px;
+    width: 10rem;
+    height: 7.8125vh;
     background-color: black;
-    margin-left: 1550px;
-    margin-top: -413px ;
     background: none;
     box-shadow: none;
     border: none;
+    margin-left: 133rem;
+    margin-top: -41vh;
 }
 
 .boton3{
@@ -388,16 +385,14 @@ text-decoration-thickness: 3px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
-    height: 60px;
+    width: 10rem;
+    height: 7.8125vh;
     background-color: black;
-    margin-left: 1715px;
-    margin-top: -413px ;
     background: none;
     box-shadow: none;
     border: none;
-
-
+margin-left: 146rem;
+margin-top: -41vh;
 }
 
 .boton4{
@@ -427,14 +422,14 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
-    height: 60px;
+    width: 10rem;
+    height: 7.8125vh;
     background-color: black;
-    margin-left: 890px;
-    margin-top: -418px ;
     background: none;
     box-shadow: none;
     border: none;
+    margin-left: 60rem;
+    margin-top: -42.5vh;
 }
 
 .boton5{
