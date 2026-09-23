@@ -257,7 +257,7 @@ color: black;
         font-weight:a weight;
         font-style: normal;
 font-weight: bold;
-border-bottom: 3px solid  green;
+border-bottom: 4px solid  green;
 width: fit-content;
     }
 
@@ -275,8 +275,8 @@ position: fixed;
     background: none;
     box-shadow: none;
     border: none;
-    margin-left: 60rem;
-    margin-top: -41.15vh;
+    margin-left: 55rem;
+    margin-top: -40.88vh;
     }
 
 
@@ -312,14 +312,14 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
-    height: 60px;
+    width: 10rem;
+    height: 6.667vh;
     background-color: black;
-    margin-left: 350px;
-    margin-top: -413px ;
     background: none;
     box-shadow: none;
     border: none;
+    margin-left: 65rem;
+    margin-top: -41.6vh;
     }
 
     .boton2{
