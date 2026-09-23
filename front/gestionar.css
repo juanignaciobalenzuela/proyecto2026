@@ -1,3 +1,8 @@
+
+html{
+    font-size: 62.5%;
+}
+
 .background-cuadrado{
     position: fixed;
     top: 50%;
@@ -29,11 +34,11 @@
     left: 50%;
     transform: translate(-50%,  -50%);
     width: 100vw;
-    height: 80px;
+    height: 12vh;
     background-color: lightgray;
     opacity: 1;
     border: 1px solid lightgray;
-    margin-top: -432px;
+   margin-top: -44vh;
     }
     
     
@@ -73,22 +78,22 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 6vh;
     background-color: black;
     opacity: 1;
 background: none;
 box-shadow: none;
 border: none;
-margin-top: -400px;
-margin-left: -930px;
+margin-left: -65rem;
+margin-top: -45vh;
     }
 
     .imagenlogo{
-margin-top: -200px;
 
-width: 50px;
-height: 50px;
+
+width: 5rem;
+height: 7vh;
     }
    
     
@@ -104,8 +109,8 @@ font-family: "Inter", sans-serif;
       border: none;
       box-shadow: none;
       white-space: nowrap;
-      margin-left: 45px;
-      margin-top: -38px;
+      margin-left: 4.5rem;
+      margin-top: -5vh;
       font-weight: 300;
 
 
@@ -226,15 +231,14 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
-    height: 60px;
+    width: 6.25rem;
+    height: 7vh;
     background-color: black;
-    margin-left: 190px;
-    margin-top: -413px ;
     background: none;
     box-shadow: none;
     border: none;
-   
+   margin-left: 47rem;
+   margin-top: -41.15vh;
 
 
     }
@@ -265,14 +269,14 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 100px;
-    height: 60px;
+    width: 10rem;
+    height: 7.81vh;
     background-color: black;
-    margin-left: 240px;
-    margin-top: -413px ;
     background: none;
     box-shadow: none;
     border: none;
+    margin-left: 60rem;
+    margin-top: -41.15vh;
     }
 
 
