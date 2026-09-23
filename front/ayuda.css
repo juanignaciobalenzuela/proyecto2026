@@ -43,7 +43,7 @@ html {
     left: 50%;
     transform: translate(-50%,  -50%);
     width: 100vw;
-    height: 10vh;
+    height: 11vh;
     background-color: lightgray;
     opacity: 1;
     border: 1px solid lightgray;
@@ -106,7 +106,7 @@ margin-left: -65rem;
 
     .imagenlogo{
 width: 5rem;
-height: 6vh;
+height: 7vh;
     }
    
    
@@ -123,7 +123,7 @@ font-family: "Inter", sans-serif;
       box-shadow: none;
       white-space: nowrap;
       margin-left: 4.5rem;
-      margin-top: -4.2vh;
+      margin-top: -5vh;
       font-weight: 300;
 
 
