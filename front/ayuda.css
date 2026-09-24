@@ -204,6 +204,7 @@ margin-top: -14.32vh;
       border: none;
       box-shadow: none;
       white-space: nowrap;
+      font-weight: bold;
 }
 
 
@@ -302,7 +303,36 @@ font-weight: bold;
     }
 
 
+.cuadrado67{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 50rem;
+    height: 7.8125vh;
+    background-color: black;
+    margin-left: -25.5rem;
+    margin-top: 7vh;
+    background: none;
+    box-shadow: none;
+    border: none;
+}
 
+.dispo{
+    font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        background-color: white;
+      font-size: 19px;
+      color: white;
+     background: none;
+      border: none;
+      box-shadow: none;
+white-space: nowrap;
+font-weight: bold;
+
+}
 
     .cuadrado7{
 position: fixed;
