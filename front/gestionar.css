@@ -202,7 +202,10 @@ font-family: "Inter", sans-serif;
    margin-top: 20vh;
     }
 
-     button{
+    
+    
+   
+   .boton12{
     color: white;
     background-color: #55a936;
     border: none;
@@ -217,10 +220,9 @@ font-family: "Inter", sans-serif;
     font-size: 22px;
     font-weight: bold;
     margin-left: -950px;
-   
-   
-    }
-    button:hover{
+   }
+    
+    .boton12:hover{
       filter: brightness(0.8);
     }
 
@@ -236,8 +238,8 @@ position: fixed;
     background: none;
     box-shadow: none;
     border: none;
-   margin-left: 47rem;
-   margin-top: -41.15vh;
+   margin-left: -49rem;
+   margin-top: -42.5vh;
 
 
     }
@@ -256,7 +258,7 @@ color: black;
         font-weight:a weight;
         font-style: normal;
 font-weight: bold;
-border-bottom: 4px solid  green;
+border-bottom: 4px solid  #55a936;
 width: fit-content;
     }
 
@@ -274,8 +276,8 @@ position: fixed;
     background: none;
     box-shadow: none;
     border: none;
-    margin-left: 55rem;
-    margin-top: -40.88vh;
+    margin-left: -40rem;
+    margin-top: -42.3vh;
     }
 
 
@@ -302,7 +304,7 @@ font-weight: bold;
 text-decoration: underline;
 text-decoration-color: #55a936;
 text-underline-offset: 5px;
-text-decoration-thickness: 3px;
+text-decoration-thickness: 3.5px;
     }
 
 
@@ -317,8 +319,8 @@ position: fixed;
     background: none;
     box-shadow: none;
     border: none;
-    margin-left: 65rem;
-    margin-top: -41.6vh;
+    margin-left: -30rem;
+    margin-top: -42.8vh;
     }
 
     .boton2{
@@ -341,7 +343,7 @@ font-weight: bold;
 text-decoration: underline;
 text-decoration-color: #55a936;
 text-underline-offset: 5px;
-text-decoration-thickness: 3px;
+text-decoration-thickness: 3.5px;
     }
 
 .cuadrado10{
@@ -355,8 +357,8 @@ position: fixed;
     background: none;
     box-shadow: none;
     border: none;
-    margin-left: 130rem;
-    margin-top: -41vh;
+    margin-left: 35rem;
+    margin-top: -42vh;
 }
 
 .boton3{
@@ -379,7 +381,7 @@ font-weight: normal;
 text-decoration: underline;
 text-decoration-color: #55a936;
 text-underline-offset: 5px;
-text-decoration-thickness: 3px;
+text-decoration-thickness: 3.5px;
 }
 
 
@@ -394,8 +396,8 @@ text-decoration-thickness: 3px;
     background: none;
     box-shadow: none;
     border: none;
-margin-left: 143rem;
-margin-top: -41vh;
+margin-left: 50rem;
+margin-top: -42vh;
 }
 
 .boton4{
@@ -418,7 +420,7 @@ font-weight: normal;
 text-decoration: underline;
 text-decoration-color: #55a936;
 text-underline-offset: 5px;
-text-decoration-thickness: 3px;
+text-decoration-thickness: 3.5px;
 }
 
 
@@ -427,14 +429,14 @@ position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,  -50%);
-    width: 0.0001rem;
+    width: 1rem;
     height: 7vh;
     background-color: black;
     background: none;
     box-shadow: none;
     border: none;
-    margin-left: 55rem;
-    margin-top: -42.5vh;
+    margin-left: 74rem;
+    margin-top: -46.2vh;
 }
 
 .boton5{
