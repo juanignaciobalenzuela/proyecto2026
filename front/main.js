@@ -11,3 +11,18 @@ boton.addEventListener('click', () => {
 cuadrado.addEventListener('mouseleave', () => {
     cuadrado.classList.remove('mostrar');
 });
+
+
+const botoncuadrado = document.querySelector('.boton1');
+
+botoncuadrado.addEventListener("click", () => {
+
+    window.location.href = "ayuda.html"; 
+});
+
+const botoncuadrado1 = document.querySelector('.boton2');
+
+botoncuadrado1.addEventListener("click", () => {
+
+    window.location.href = "tierra.html"; 
+});
