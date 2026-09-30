@@ -26,3 +26,13 @@ botoncuadrado1.addEventListener("click", () => {
 
     window.location.href = "tierra.html"; 
 });
+
+
+const botoncuadrado12 = document.querySelector('.boton12');
+
+botoncuadrado12.addEventListener("click", () => {
+
+    window.location.href = "tierra.html"; 
+});
+
+

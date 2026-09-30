@@ -12,3 +12,18 @@ botoncuadrado1.addEventListener("click", () => {
 window.location.href = "tierra.html";
 
 });
+
+
+const contenedor = document.getElementById('ayudaa');
+const encabezado = contenedor.querySelector('.encabezado');
+
+
+encabezado.addEventListener('click', () => {
+    
+    if (contenedor.classList.contains('activo')) {
+        contenedor.classList.remove('activo');
+    } else {
+        contenedor.classList.add('activo');
+    }
+    
+});
