@@ -177,14 +177,14 @@ position: fixed;
     left: 50%;
     transform: translate(-50%,  -50%);
     width: 44rem;
-    height: 6.51vh;
+    height: 5vh;
     background-color: black;
     opacity: 1;
 background: none;
 box-shadow: none;
 border: none;
-margin-left: -28rem;
-margin-top: -16vh;
+margin-left: -29rem;
+margin-top: -15vh;
 
 
 }
@@ -220,13 +220,15 @@ margin-top: -16vh;
     user-select: none;
     font-size: 18px;
     font-weight: bold;
+    
+
 }
 
 .flecha {
     display: inline-block;
-    margin-right: 10px;
+    margin-top: -10vh;
     transition: transform 0.3s ease; 
-    margin-left: 10rem;
+    margin-left: 14rem;
     
 }
 

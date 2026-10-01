@@ -8,6 +8,11 @@ height: 100vw;
 background-color: gray;
 }
 
+.imagenfondo{
+  height: 100vw;
+  width: 100vw;
+}
+
 .cuadrado1{
 position: fixed;
 top: 50%;
