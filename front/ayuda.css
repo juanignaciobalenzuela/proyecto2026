@@ -224,12 +224,27 @@ margin-top: -15vh;
 
 }
 
+.cuadrado46{
+    position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,  -50%);
+        width: 44rem;
+        height: 5vh;
+        background-color: black;
+        opacity: 1;
+    background: none;
+    box-shadow: none;
+    border: none;
+    margin-left: -14rem;
+    margin-top: -12vh;
+    
+    
+    }
 .flecha {
     display: inline-block;
-    margin-top: -10vh;
     transition: transform 0.3s ease; 
-    margin-left: 14rem;
-    
+  
 }
 
 .contenedor.activo .flecha {
@@ -239,7 +254,6 @@ margin-top: -15vh;
 .contenido {
     max-height: 0;
     overflow: hidden;
-    opacity: 0;
     padding-left: 24px;
 }
 
