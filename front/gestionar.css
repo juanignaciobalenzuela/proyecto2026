@@ -346,82 +346,7 @@ text-underline-offset: 5px;
 text-decoration-thickness: 3.5px;
     }
 
-.cuadrado10{
-position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,  -50%);
-    width: 10rem;
-    height: 7.8125vh;
-    background-color: black;
-    background: none;
-    box-shadow: none;
-    border: none;
-    margin-left: 35rem;
-    margin-top: -42vh;
-}
 
-.boton3{
-color: black;
-background: none;
-border: none;
-box-shadow: none;
-white-space: nowrap;
-width: 120px;
-height: 30px;
-font-size: 17px;
-font-family: "Inter", sans-serif;
-font-optical-sizing: auto;
-font-weight: weight;
-font-style: normal;
-font-weight: normal;
-}
-
-.boton3:hover{
-text-decoration: underline;
-text-decoration-color: #55a936;
-text-underline-offset: 5px;
-text-decoration-thickness: 3.5px;
-}
-
-
-.cuadrado11{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,  -50%);
-    width: 10rem;
-    height: 7.8125vh;
-    background-color: black;
-    background: none;
-    box-shadow: none;
-    border: none;
-margin-left: 50rem;
-margin-top: -42vh;
-}
-
-.boton4{
-color: black;
-background: none;
-border: none;
-box-shadow: none;
-white-space: nowrap;
-width: 5rem;
-height: 30px;
-font-size: 17px;
-font-family: "Inter", sans-serif;
-font-optical-sizing: auto;
-font-weight: weight;
-font-style: normal;
-font-weight: normal;
-}
-
-.boton4:hover{
-text-decoration: underline;
-text-decoration-color: #55a936;
-text-underline-offset: 5px;
-text-decoration-thickness: 3.5px;
-}
 
 
 .cuadrado12{
@@ -508,4 +433,46 @@ transform: scale(0.95);
 
 .cuadrado14.mostrar{
     display: block;
+}
+
+.imagen2{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    width: 2.3rem;
+    height: auto;
+}
+
+.contra{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 8rem;
+    height: 2vh;
+    margin-top: -1.3rem;
+    margin-left: -1.5rem;
+    background-color: #F0F0F0;
+    
+   
+}
+
+.boton6{
+    color: black;
+   background: none;
+    border: none;
+    box-shadow: none;
+    white-space: nowrap;
+    width: 120px;
+    height: 30px;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+
+}
+
+.boton6:hover{
+    text-decoration: underline;
+
 }
