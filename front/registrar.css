@@ -29,9 +29,9 @@
     width: 206px;
     height: 375px;
     background-color: lightgray;
-    margin-left: -188px;
+    margin-left: -187px;
     opacity: 0.9;
-    filter: blur(3px);
+    filter: blur(2px);
     }
     
     .cuadrado3{

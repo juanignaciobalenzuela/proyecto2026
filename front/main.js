@@ -42,3 +42,10 @@ botoncuadrado13.addEventListener("click", () => {
 
 window.location.href = "mail.html"
 });
+
+const botoncuadrado14 = document.querySelector('.boton7');
+
+botoncuadrado14.addEventListener("click", () => {
+
+    window.location.href = "wireframe.html"
+})

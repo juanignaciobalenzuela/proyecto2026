@@ -476,3 +476,45 @@ transform: scale(0.95);
     text-decoration: underline;
 
 }
+
+.img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    width: 8rem;
+    height: 0.5vh;
+    margin-top: 1.6rem;
+    margin-left: -0.1rem;
+  background: none;
+  border: none;
+  box-shadow: none;
+    background-color: #F0F0F0; 
+}
+
+.imagen3{
+   
+    margin-left: -3rem;
+    width: 2.3rem;
+    height: auto;
+}
+
+.boton7{
+    color: black;
+    background: none;
+     border: none;
+     box-shadow: none;
+     white-space: nowrap;
+     width: 120px;
+     height: 30px;
+     font-size: 13px;
+     font-family: "Inter", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: weight;
+         font-style: normal;
+         margin-left: 2.6rem;
+}
+
+.boton7:hover{
+    text-decoration: underline;
+}
