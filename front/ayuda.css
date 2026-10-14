@@ -673,7 +673,7 @@ transform: scale(0.95);
 .imagen2{
     margin-top: 3rem;
     margin-left: 2rem;
-    width: 2.3rem;
+    width: 2.1rem;
     height: auto;
 }
 
@@ -686,7 +686,7 @@ transform: scale(0.95);
     height: 0.5vh;
     margin-top: -2rem;
     margin-left: -1.5rem;
-    background-color: #F0F0F0;
+    
     
    
 }
@@ -720,11 +720,11 @@ transform: scale(0.95);
     width: 8rem;
     height: 0.5vh;
     margin-top: 1.8rem;
-    margin-left: -0.1rem;
+    margin-left: -0.5rem;
   background: none;
   border: none;
   box-shadow: none;
-    background-color: #F0F0F0; 
+     
 }
 
 .imagen3{
@@ -768,5 +768,5 @@ transform: scale(0.95);
   background: none;
   border: none;
   box-shadow: none;
-    background-color: #F0F0F0; 
+  
 }
